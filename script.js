@@ -2,8 +2,10 @@
 var imgIcon = document.getElementById('img1');
 
 
-window.onclick = function (event) {
+function onClickSave(id) {
     // need to add file download
+    console.log(id);
+    if(id === 'img1'){
         var link = document.createElement("a");
         link.download = "test";
         link.href = "./test_form.pdf";
@@ -11,4 +13,5 @@ window.onclick = function (event) {
         link.click();
         document.body.removeChild(link);
         delete link;
+    }
 }
