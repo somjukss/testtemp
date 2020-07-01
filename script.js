@@ -7,7 +7,7 @@ function onClickSave(id) {
     console.log(id);
     if(id === 'img1'){
         var link = document.createElement("a");
-        link.download = "test";
+        link.download = "test_form";
         link.href = "./test_form.pdf";
         document.body.appendChild(link);
         link.click();
